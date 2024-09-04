@@ -42,3 +42,7 @@ _ git log --oneline
 
 Cách chuyển về code trong quá khứ
 _ git checkout mã id
+
+
+MUỐN đổi tên commit message
+
