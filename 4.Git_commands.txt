@@ -45,4 +45,12 @@ _ git checkout mã id
 
 
 MUỐN đổi tên commit message
+COMMIT MỚI NHẤT NHƯNG MUỐN SỬA
+_ git commit --amend
+và di chuyển con trỏ xuống cuối ấn shift + 4 ($)
+sau đó nhấn nút ( a ) và chỉnh sửa message mong muốn
+Và chú ý ở dưới cùng có chữ INSERT 
+===> ấn ESC để thoát sau đó gõ :x và ấn ENTER
 
+Sau khi đổi commit message xong thì ta push lên lại = cách
+_ git push --force (or) git push -f
