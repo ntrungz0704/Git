@@ -45,7 +45,7 @@ _ git checkout mã id
 
 
 MUỐN đổi tên commit message
-COMMIT MỚI NHẤT NHƯNG MUỐN SỬA
+COMMIT MỚI NHẤT NHƯNG MUỐN SỬA ( 1 )
 _ git commit --amend
 và di chuyển con trỏ xuống cuối ấn shift + 4 ($)
 sau đó nhấn nút ( a ) và chỉnh sửa message mong muốn
@@ -54,3 +54,26 @@ Và chú ý ở dưới cùng có chữ INSERT
 
 Sau khi đổi commit message xong thì ta push lên lại = cách
 _ git push --force (or) git push -f
+
+COMMIT TRONG QUÁ KHỨ ( 2 )
+
+Ví dụ 
+33930f3 (HEAD -> main, origin/main, origin/HEAD) add file 2
+5d6c57f add file
+d937ce3 Create README.md
+e59a3ac add file how to use git
+
+có 4 commit đó nếu như tôi muốn sửa commit trong QUÁ KHỨ nghĩa là commit này "5d6c57f"
+Thì tôi phải đi vào trước commit muốn sửa là 1 commit ở đây thì là "e59a3ac"
+
+===> LỆNH NHƯ SAU
+_ git rebase -i e59a3ac <id trước commit muốn sửa>
+
+--- Và sau khi ấn Enter nó sẽ hiện ra trước commit mà bạn nhập => commit newest
+ Rồi mình sửa thôi
+để ý chữ "pick" 
+nhấn chữ "a" or "i" để vào mode edit
+sau đó ta xóa chữ pick đi và điền vào chữ "r" or "reword"
+sau đó ta ấn "ESC" và tiếp đó là ":x" để lưu 
+cuối cùng ta sửa như bước trên ấn "a" or "i" rồi sửa rồi lưu 
+sau đó ta ___ git push -f
