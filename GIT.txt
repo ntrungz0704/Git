@@ -1,0 +1,45 @@
+https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git
+3 khái niệm QUAN TRỌNG của GIT
++ repo
++ commit
++ branch
+
+
+CÁC LỆNH CƠ BẢN CỦA GIT
+Cấu hình Git lần đầu:
+
+git config --global user.name "Tên của bạn"
+git config --global user.email "email@example.com"
+Khởi tạo và sao chép kho lưu trữ:
+
+git init: Khởi tạo một kho lưu trữ Git mới.
+git clone <URL>: Sao chép một kho lưu trữ từ một URL.
+Thêm và commit thay đổi:
+
+git add <file>: Thêm một file cụ thể vào staging area.
+git add .: Thêm tất cả các thay đổi vào staging area.
+git commit -m "Thông điệp commit": Commit các thay đổi với một thông điệp.
+Kiểm tra trạng thái và lịch sử:
+
+git status: Hiển thị trạng thái của kho lưu trữ.
+git log: Hiển thị lịch sử commit.
+Làm việc với nhánh:
+
+git branch: Liệt kê các nhánh hiện có.
+git branch <tên nhánh>: Tạo một nhánh mới.
+git checkout <tên nhánh>: Chuyển sang một nhánh khác.
+git merge <tên nhánh>: Gộp nhánh chỉ định vào nhánh hiện tại.
+Đồng bộ hóa thay đổi:
+
+git remote add origin <URL>: Liên kết kho lưu trữ địa phương với một kho lưu trữ từ xa.
+git pull: Lấy về và hợp nhất các thay đổi từ kho lưu trữ từ xa.
+git push: Đẩy các thay đổi từ kho lưu trữ địa phương lên kho lưu trữ từ xa.
+Xử lý xung đột:
+
+Khi xảy ra xung đột, Git sẽ thông báo và yêu cầu bạn xử lý thủ công các tệp bị xung đột. Sau khi xử lý xung đột, bạn cần thực hiện:
+git add <file>: Thêm các tệp đã sửa xung đột vào staging area.
+git commit -m "Thông điệp giải quyết xung đột": Commit các thay đổi đã sửa xung đột.
+Khác:
+
+git stash: Lưu tạm thời các thay đổi chưa commit.
+git stash apply: Khôi phục các thay đổi từ stash.

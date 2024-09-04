@@ -1,0 +1,6 @@
+Repository(repo): kho lưu trữ
+commit: đơn vị làm việc, hành động đưa những sự thay đổi vào Repo
+branch: nhánh 
+main/ master: tên của Repo chính (main repo)
+merge/ rebase: kết hợp 2 nhánh
+develop: tên của nhánh, lập trình viên

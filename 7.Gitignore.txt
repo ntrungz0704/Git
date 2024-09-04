@@ -1,0 +1,9 @@
+Cấu hình GITIGNORE để bỏ qua các file không cần giám sát
+sẽ bỏ qua những file có đuôi là gì đó mà bạn điền vào
+ví dụ
+# bỏ qua file log
++ *.log
+# bỏ qua thư mục
++ "tên thư mục"/
+# bỏ qua file
++ "tên file.txt"

@@ -1,0 +1,35 @@
+Các lệnh cơ bản:
+1) cd : change directory : thay đổi đường dẫn nơi đang làm việc
++ cd .. : quay về thư mục cha
+
+2) Liệt kê các danh sách tập tin, thư mục
+dir : MS Windows
+ls : Linux, MacOs
+
+3) Tạo thư mục
+mkdir "tên thư mục"
+ví dụ: mkdir File01
+
+4) Tạo tập tin
+touch "tên tập tin"
+ví dụ: touch 
+
+5) In, xuất nội dung trong file, tập tin
+echo "nội dung"
++ > : chỉ định hướng để xuất dữ liệu ( overwrite : ghi đè lên )
+echo "nội dung" > "tên file"
++ >> : ghi trên dòng mới ( new line )
+echo "nội dung" >> "tên file"
+
+Cũng có thể tạo file bằng lệnh ( echo ) bằng dòng lệnh trên 
+
+6) Hiển thị nội dung
+cat "tên file"
+
+7) Tìm kiếm, tra cứu sự khác nhau của nội dung file
+diff "file1" "file2"
+
+8) Lệnh xóa
+rm "tên file" : ( dùng để xóa 1 tập tin )
+rm -d "tên thư mục" ( và thư mục muốn xóa phải là THƯ MỤC RỖNG )
+rm -m "tên thư mục" ( xóa thư mục có NỘI DUNG )

@@ -1,0 +1,44 @@
+Các  lệnh cơ bản của git
+_ git --help : xem các lệnh trợ giúp, cách sử dụng, ý nghĩa của các lệnh git
+_ git --version : check xem git đã được install chưa và version nào 
+_ git status : hiển thị trạng thái kho lưu trữ
+_ git log : hiển thị lịch sử cũ, các commit
+
+Câu lệnh để cấu hình Repo mới
+_ git init [repo name] : tạo ra một kho lưu trữ
+_ git clone [repo name] [clone name] : để tạo 1 bản sao được l.kết với Repo
+_ git config -l : xem cấu hình hiện tại
+_ git config -l [--scope] [option_name] [value]
+scope : có 3 mức
++ -- system => tất cả người dùng
++ -- global => liên quan đến repo ( nhiều repo )
++ -- local => liên quan đến 1 repo hiện tại
+
+
+Muốn tạo nhánh mới
+_ git checkout -b <tên nhánh>
+
+Muốn chuyển qua lại giữa các nhánh
+_ git checkout <tên nhánh>
+
+Muốn xóa nhánh 
++ Phải thoát khỏi nhánh muốn xóa trở về nhánh main chẳng hạn
++ Dùng lệnh
+_ git branch -d <tên nhánh>
+
+Hoặc
+_ git branch -D <tên nhánh> nếu như nhánh đó bạn chưa push lên nhưng vẫn muốn xóa NHÁNH
+
+===> ĐÓ LÀ CHỈ XÓA TRÊN LOCAL nghĩa là xóa trên máy tính của bạn đang thực hiện thôi
+
+
+Còn muốn xóa bỏ BRANCH Ở TRÊN REMOTE nghĩa là trên github
+_ git push -d origin <tên nhánh>
+
+
+Lệnh git log
+Nếu muốn hiển thị các commit đã thay đổi dễ nhìn
+_ git log --oneline
+
+Cách chuyển về code trong quá khứ
+_ git checkout mã id

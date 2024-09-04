@@ -1,0 +1,13 @@
+Git là gì ?
+_ là 1 hệ thống quản lý phiên bản
+_ các nhóm có thể tương tác trong 1 dự án ở bên trong git
+_ có thể khôi phục là các file trước đó, những đoạn code
+_ lấy dữ liệu, thêm xóa dữ liệu và update dữ liệu lên Web
+_ công cụ giải quyết xung đột(conflict)
+
+
+Lợi ích khi dùng Git
+_ ko làm hỏng bất cứ thứ gì ( bởi  vì có thể quay lại phiên bản, file đầu tiên )
+_ giúp chúng ta có thể cộng tác với nhiều người
+_ phát triển phiên bản mới mà ko ảnh hưởng đến phiên bản cũ mà chúng ta đang có
+_ chia sẽ công khai, rộng rãi bất cứ ai

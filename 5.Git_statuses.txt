@@ -1,0 +1,34 @@
+3 trạng thái của GIT
+
+Gồm 3 Git Statuses
+1) Working Directory (Working Tree)
++ git status : giúp bạn kiểm tra trạng thái thư mục làm việc của mình.
+
+2) Staging Area (Index)
++ git add <file> : thêm các thay đổi vào vùng trung gian.
+
+3) Git Directory (Repository)
++ git commit -m "message" : lưu các thay đổi từ vùng lưu trữ vào kho lưu trữ.
+
+
+3 Main Branches
+1) HEAD
++ git log : có thể hiển thị cho bạn các commit được HEAD trỏ tới.
+2) Index (Staging Area)
++ git diff --staged : hiển thị sự khác biệt giữa các thay đổi được dàn dựng và lần xác nhận cuối cùng.
+3) Working Directory
++ git diff : hiển thị sự khác biệt giữa thư mục làm việc và vùng trung gian.
+
+
+		Bản tóm tắt:(summary)
+Thư mục làm việc : Nơi bạn chỉnh sửa tập tin.
+
+Khu vực dàn dựng (Chỉ mục) : Nơi bạn chuẩn bị các thay đổi cho lần xác nhận tiếp theo.
+
+Thư mục Git (Kho lưu trữ) : Nơi lưu trữ tất cả các cam kết.
+
+HEAD : Trỏ tới bản cam kết mới nhất trong nhánh hiện tại.
+
+Chỉ mục : Chứa các tập tin bạn muốn cam kết.
+
+Thư mục làm việc : Lưu trữ các tập tin dự án của bạn.
